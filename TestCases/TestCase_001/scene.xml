@@ -1,0 +1,17 @@
+<WINDOW type="subconfig" name="WINDOW">
+  <WIN_WIDTH type="int">1024</WIN_WIDTH>
+  <WIN_HEIGHT type="int">768</WIN_HEIGHT>
+  <WIN_TITLE type="string">Test Window</WIN_TITLE>
+</WINDOW>
+
+<SCENE type="subconfig" name="SCENE">
+  <MODEL type="subconfig">
+    <MODEL_SIG type="string" >teapot</MODEL_SIG>
+    <MODEL_FILE type="string">teapot/teapot.obj</MODEL_FILE>
+  </MODEL>
+
+  <MODEL type="subconfig">
+    <MODEL_SIG type="string" >teapot1</MODEL_SIG>
+    <MODEL_FILE type="string">teapot/teapot.obj</MODEL_FILE>
+  </MODEL>
+</SCENE>

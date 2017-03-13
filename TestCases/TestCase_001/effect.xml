@@ -1,0 +1,22 @@
+<EFFECT type="subconfig">
+  <EFFECT_SIG type="string">Deferred_Shading</EFFECT_SIG>
+  
+  <SHADER type="subconfig">
+   <SHADER_NAME type="string">GeometryPass</SHADER_NAME>
+   <VERTEX_SHADER type="string">shaders/geomV.glsl</VERTEX_SHADER>
+   <FRAGMENT_SHADER type="string">shaders/geomF.glsl</FRAGMENT_SHADER>
+  </SHADER>
+
+  <SHADER type="subconfig">
+    <SHADER_NAME type="string">DeferredPass</SHADER_NAME>
+    <VERTEX_SHADER type="string">shaders/DeferredV.glsl</VERTEX_SHADER>
+    <FRAGMENT_SHADER type="string">shaders/DeferredF.glsl</FRAGMENT_SHADER>
+  </SHADER>
+
+  <SHADER type="subconfig">
+    <SHADER_NAME type="string">CopyPass</SHADER_NAME>
+    <VERTEX_SHADER type="string">shaders/copyTexV.glsl</VERTEX_SHADER>
+    <FRAGMENT_SHADER type="string">shaders/copyTexF.glsl</FRAGMENT_SHADER>
+  </SHADER>
+  
+</EFFECT>

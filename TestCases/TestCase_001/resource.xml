@@ -1,0 +1,36 @@
+<RESOURCE type="subconfig" name="RESOURCE">
+  <TEXTURE>
+    <TEXTURE_NAME type="string">texnormal</TEXTURE_NAME>
+    <TEXTURE_TYPE type="string">tex2d</TEXTURE_TYPE>
+    <TEXTURE_SIZE type="string">1024 768</TEXTURE_SIZE>
+  </TEXTURE>
+  <TEXTURE>
+    <TEXTURE_NAME type="string">texpos</TEXTURE_NAME>
+    <TEXTURE_TYPE type="string">tex2d</TEXTURE_TYPE>
+    <TEXTURE_SIZE type="string">1024 768</TEXTURE_SIZE>
+  </TEXTURE>
+  <TEXTURE type="subconfig">
+    <TEXTURE_NAME type="string">texcomposite</TEXTURE_NAME>
+    <TEXTURE_TYPE type="string">tex2d</TEXTURE_TYPE>
+    <TEXTURE_SIZE type="string">1024 768</TEXTURE_SIZE>
+  </TEXTURE>
+
+  <FBO>
+    <FBO_NAME type="string">fbo</FBO_NAME>
+    <FBO_SIZE type="vec2">1024 768</FBO_SIZE>
+    <FBO_STENCIL type="bool">0</FBO_STENCIL>
+    <FBO_ATTACHMENT>
+      <FBO_ATTACHED_TEXTURE type="string">texpos</FBO_ATTACHED_TEXTURE>
+    </FBO_ATTACHMENT>
+    <FBO_ATTACHMENT>
+      <FBO_ATTACHED_TEXTURE type="string">texnormal</FBO_ATTACHED_TEXTURE>
+    </FBO_ATTACHMENT>
+  </FBO>
+  <FBO>
+    <FBO_NAME type="string">compositefbo</FBO_NAME>
+    <FBO_SIZE type="vec2">1024 768</FBO_SIZE>
+    <FBO_ATTACHMENT>
+      <FBO_ATTACHED_TEXTURE type="string">texcomposite</FBO_ATTACHED_TEXTURE>
+    </FBO_ATTACHMENT>
+  </FBO>
+</RESOURCE>
