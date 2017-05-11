@@ -45,6 +45,7 @@ namespace OST
 
 	namespace DEFAULT_CONFIG
 	{
+		const std::string OPTION_PATH = "option.xml";
 		const std::string SCENE_PATH = "scene.xml";
 		const std::string EFFECT_PATH = "effect.xml";
 		const std::string RESOURCE_PATH = "resource.xml";
@@ -57,6 +58,20 @@ namespace OST
 
 	namespace CONFIG_KEYWORD
 	{
+		const std::string OPTION = "OPTION";
+
+		const std::string CAMERA_CONFIG = "CAMERA_CONFIG";
+		const std::string CAMERA = "CAMERA";
+		const std::string CAMERA_POS = "CAMERA_POS";
+		const std::string CAMERA_TARGET = "CAMERA_TARGET";
+		const std::string CAMERA_UP = "CAMERA_UP";
+		const std::string CAMERA_FOV = "CAMERA_FOV";
+		const std::string CAMERA_VIEWPORT = "CAMERA_VIEWPORT";
+		const std::string CAMERA_NEAR_FAR = "CAMERA_NEAR_FAR";
+
+		const std::string MANIPULATOR_SIG = "MANIPULATOR_SIG";
+
+		const std::string SCENE_CONFIG = "SCENE_CONFIG";
 		const std::string SCENE = "SCENE";
 		const std::string EFFECT = "EFFECT";
 		const std::string EFFECT_SIG = "EFFECT_SIG";
@@ -85,6 +100,12 @@ namespace OST
 		const std::string FBO_STENCIL = "FBO_STENCIL";
 		const std::string FBO_ATTACHMENT = "FBO_ATTACHMENT";
 		const std::string FBO_ATTACHED_TEXTURE = "FBO_ATTACHED_TEXTURE";
+	}
+
+	namespace CAMERA_MANIPULATOR_SIG
+	{
+		const std::string CMS_MANUAL_NAVIGATION = "MANUAL_NAVIGATION";
+		const std::string CMS_PLAN_NAVIGATION = "PLAN_NAVIGATION";
 	}
 
 	namespace RESOURCE_SIG

@@ -2,6 +2,7 @@
 #include "EffectManager.h"
 #include "Effect.h"
 #include "ModelManager.h"
+#include "CameraManager.h"
 #include "ResourceManager.h"
 
 using namespace OST;
@@ -90,6 +91,10 @@ bool CRenderer::__initEnvironment()
 //FUNCTION:
 void CRenderer::__loadConfig()
 {
+
+	m_pOptionConfig = new CConfig;
+	m_pOptionConfig->parseXMLFile(OST::DEFAULT_CONFIG::OPTION_PATH);
+
 	m_pSceneConfig = new CConfig;
 	m_pSceneConfig->parseXMLFile(OST::DEFAULT_CONFIG::SCENE_PATH);
 
@@ -133,8 +138,11 @@ bool OST::CRenderer::__initAllResource()
 //FUNCTION:
 bool OST::CRenderer::__initScene()
 {
-	CConfig* SceneModelConfig = m_pSceneConfig->fetchSubConfigByName(CONFIG_KEYWORD::SCENE);
-	if (CModelManager::getInstance()->createAllModel(SceneModelConfig)) return false;
+	CConfig* SceneModelConfig = m_pSceneConfig->fetchSubConfigByName(CONFIG_KEYWORD::SCENE_CONFIG);
+	if (!CModelManager::getInstance()->createAllModel(SceneModelConfig)) return false;
+
+	CConfig* CameraConfig = m_pSceneConfig->fetchSubConfigByName(CONFIG_KEYWORD::CAMERA_CONFIG);
+	if (!CCameraManager::getInstance()->createCameraManipulator(CameraConfig)) return false;
 
 	return true;
 }

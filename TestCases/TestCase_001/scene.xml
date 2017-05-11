@@ -4,7 +4,7 @@
   <WIN_TITLE type="string">Test Window</WIN_TITLE>
 </WINDOW>
 
-<SCENE type="subconfig" name="SCENE">
+<SCENE type="subconfig" name="SCENE_CONFIG">
   <MODEL type="subconfig">
     <MODEL_SIG type="string" >teapot</MODEL_SIG>
     <MODEL_FILE type="string">teapot/teapot.obj</MODEL_FILE>
@@ -15,3 +15,24 @@
     <MODEL_FILE type="string">teapot/teapot.obj</MODEL_FILE>
   </MODEL>
 </SCENE>
+
+
+<CAMERA_CONFIG type="subconfig" name="CAMERA_CONFIG">
+  <CAMERA type="subconfig" name="main">
+    <CAMERA_POS type ="vec3">0 0 -10</CAMERA_POS>
+    <CAMERA_TARGET type="vec3">0 0 10</CAMERA_TARGET>
+    <CAMERA_UP type="vec3">0 1 0</CAMERA_UP>
+    <CAMERA_FOV type="float">60.0</CAMERA_FOV>
+    <CAMERA_VIEWPORT type="vec2">1024 768</CAMERA_VIEWPORT>
+    <CAMERA_NEAR_FAR type="vec2">0.1  1000.0</CAMERA_NEAR_FAR>
+  </CAMERA>
+
+  <CAMERA type="subconfig" name="c2">
+    <CAMERA_POS>0 10 0</CAMERA_POS>
+    <CAMERA_TARGET>0 0 0</CAMERA_TARGET>
+    <CAMERA_UP>0 0 1</CAMERA_UP>
+    <CAMERA_FOV> 60.0 </CAMERA_FOV>
+    <CAMERA_VIEWPORT>1024 768</CAMERA_VIEWPORT>
+    <CAMERA_NEAR_FAR>0.01 1000.0</CAMERA_NEAR_FAR>
+  </CAMERA>
+</CAMERA_CONFIG>

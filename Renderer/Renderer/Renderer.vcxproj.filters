@@ -26,6 +26,12 @@
     <Filter Include="Shape">
       <UniqueIdentifier>{b1054767-168d-4496-961c-f5b52d569fd6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Camera">
+      <UniqueIdentifier>{d3eac630-3982-4baa-92c8-32c9f6d40f96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Camera\Manipulator">
+      <UniqueIdentifier>{06dc1d4f-758c-4fb1-9fa1-f54672191605}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ResourceManager.h">
@@ -100,6 +106,18 @@
     <ClInclude Include="Resource.h">
       <Filter>Resource</Filter>
     </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraManipulator.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraManager.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="ManualManipulator.h">
+      <Filter>Camera\Manipulator</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Config.cpp">
@@ -158,6 +176,18 @@
     </ClCompile>
     <ClCompile Include="Resource.cpp">
       <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraManipulator.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraManager.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="ManualManipulator.cpp">
+      <Filter>Camera\Manipulator</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

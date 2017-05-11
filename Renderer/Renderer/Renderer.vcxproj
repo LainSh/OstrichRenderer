@@ -83,6 +83,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="BaseProduct.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="CameraManager.h" />
+    <ClInclude Include="CameraManipulator.h" />
     <ClInclude Include="Common.h" />
     <ClInclude Include="Config.h" />
     <ClInclude Include="ConfigParser.h" />
@@ -91,6 +94,7 @@
     <ClInclude Include="EffectManager.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="FBO.h" />
+    <ClInclude Include="ManualManipulator.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="Shape.h" />
     <ClInclude Include="Interface.h" />
@@ -108,6 +112,9 @@
     <ClInclude Include="Texture.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="CameraManager.cpp" />
+    <ClCompile Include="CameraManipulator.cpp" />
     <ClCompile Include="Config.cpp" />
     <ClCompile Include="ConfigParser.cpp" />
     <ClCompile Include="DisplayWindow.cpp" />
@@ -115,6 +122,7 @@
     <ClCompile Include="EffectManager.cpp" />
     <ClCompile Include="Entity.cpp" />
     <ClCompile Include="FBO.cpp" />
+    <ClCompile Include="ManualManipulator.cpp" />
     <ClCompile Include="Resource.cpp" />
     <ClCompile Include="Shape.cpp" />
     <ClCompile Include="Interface.cpp" />

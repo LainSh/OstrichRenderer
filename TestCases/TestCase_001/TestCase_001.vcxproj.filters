@@ -40,6 +40,7 @@
     <Xml Include="effect.xml" />
     <Xml Include="scene.xml" />
     <Xml Include="resource.xml" />
+    <Xml Include="option.xml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="shaders\deferredF.glsl">

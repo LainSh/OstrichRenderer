@@ -43,6 +43,7 @@ namespace OST
 
 		std::map<std::string, CEffect*> m_EffectMap;
 
+		CConfig* m_pOptionConfig;
 		CConfig* m_pSceneConfig;
 		CConfig* m_pEffectConfig;
 		CConfig* m_pResourceConfig;
